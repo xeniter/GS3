@@ -82,8 +82,8 @@ if [ "`id -un`" != "root" ]; then
 	fi
 fi
 
-if ( ! cat /etc/debian_version | head -n 1 | grep '^6.'      1>>/dev/null ) \
-&& ( ! cat /etc/debian_version | head -n 1 | grep 'squeeze'  1>>/dev/null )
+if ( ! cat /etc/debian_version | head -n 1 | grep '^7.'      1>>/dev/null ) \
+&& ( ! cat /etc/debian_version | head -n 1 | grep 'wheezy'  1>>/dev/null )
 then
 	if [ "$L2" == "de" ]; then
 		err "  Ihr Debian ist nicht Version 6 (\"Squeeze\").\n" \
